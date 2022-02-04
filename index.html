@@ -1,1 +1,34 @@
-Hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Store</title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <script src="https://unpkg.com/iframe-resizer@4.3.2/js/iframeResizer.min.js" async></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+      iframe {
+        width:100%;
+        border-color: black;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: thin;
+        min-width: 300px;
+        min-height: 300px;
+      }</style>
+  </head>
+  <body>
+    <iframe
+      scrolling="no"
+      allow="payment"
+      allowpaymentrequest="true"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://feb1-104-195-154-49.ngrok.io/ecommerce/DTL"
+      title="Shop at TOOLBX now!"
+    />
+    <div>Some content which shouldn't show up</div>
+    <script>iFrameResize({log:true})</script>
+  </body>
+</html>
